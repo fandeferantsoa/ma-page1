@@ -3,36 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
+    <title>Fandeferantsoa Aimé RASOLONIRINA | Expert Comptable</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-light: #f4f7f6;
+        }
+
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background: var(--primary-color);
             color: white;
+            padding: 2rem 1rem;
             text-align: center;
         }
+
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin: 0;
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-section img {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+        }
+
+        h1, h2, h3 { color: var(--primary-color); }
+        .white-text { color: white; }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 5px 2px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .profile-section { flex-direction: column; text-align: center; }
+            .grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bonjour et bienvenue sur mon site.</h1>
+
+<header>
+    <h1 class="white-text">Fandeferantsoa Aimé RASOLONIRINA [cite: 26]</h1>
+    <p>Chargé de mission comptable & Analyste Financier [cite: 27, 60]</p>
+</header>
+
+<div class="container">
+    
+    <section class="profile-section">
+        <img src="votre-photo.jpg" alt="Fandeferantsoa Aimé">
+        <div>
+            <h2>À propos de moi</h2>
+            <p>Passionné par la comptabilité et les finances, je suis fort de 5 années d'expérience en cabinet comptable[cite: 28]. Je propose des solutions financières rigoureuses, adaptées et efficaces[cite: 30].</p>
+            <p><strong>Atouts :</strong> <span class="tag">Créativité [cite: 21]</span> <span class="tag">Adaptivité [cite: 22]</span></p>
+        </div>
+    </section>
+
+    <div class="grid">
+        <section class="card">
+            <h3>Expériences Professionnelles</h3>
+            
+            <strong>Chargé de mission comptable [cite: 38]</strong><br>
+            <em>Karlit (Filiale de Keobiz) | Depuis sept. 2023 [cite: 39]</em>
+            <ul>
+                <li>Saisie factures et relevés bancaires[cite: 40].</li>
+                <li>Rapprochements bancaires et analyse (Pennylane, Coala)[cite: 41].</li>
+                <li>Établissement du bilan[cite: 42].</li>
+            </ul>
+
+            <strong>Data Analyst N1 [cite: 43]</strong><br>
+            <em>Karlit | Juil. 2022 - Août 2023 [cite: 44]</em>
+            <ul>
+                <li>Préparation et déclaration de TVA[cite: 45].</li>
+                <li>Analyse de dossiers comptables[cite: 45].</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Formation & Diplômes</h3>
+            <p><strong>L2 Finance et comptabilité [cite: 32, 33]</strong><br>
+            IMGAM Ivandry (Étude en cours) [cite: 33]</p>
+            
+            <p><strong>Baccalauréat série D [cite: 35]</strong><br>
+            Mention Assez-bien (2019) [cite: 36]</p>
+
+            <h3>Certifications</h3>
+            <span class="tag">Pennylane Certified [cite: 58, 59]</span>
+            <span class="tag">Analyse Boursière (GOVA) [cite: 60, 61]</span>
+        </section>
     </div>
+
+    <section class="card">
+        <h3>Compétences Techniques</h3>
+        <div class="grid">
+            <div>
+                <h4>Logiciels</h4>
+                <p>Pennylane, SAGE Compta [cite: 53], Pack Office [cite: 54], Canva[cite: 55].</p>
+            </div>
+            <div>
+                <h4>Trading & Finance</h4>
+                <p>Analyse boursière [cite: 60], MetaTrader 4 & 5[cite: 56].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" style="text-align: center;">
+        <h3>Contactez-moi</h3>
+        <p>📍 LOT IVC 64BIS Ambohimanndroso, Ambohimanarina [cite: 2]</p>
+        <p>📧 <a href="mailto:rasolonirinafandeferantsoa@gmail.com" class="contact-link">rasolonirinafandeferantsoa@gmail.com [cite: 1]</a></p>
+        <p>📞 033 74 26 441 [cite: 8]</p>
+        <p>
+            <a href="#" class="contact-link">Facebook (@Fandeferantsoa) [cite: 18]</a> | 
+            <a href="#" class="contact-link">Instagram [cite: 19]</a>
+        </p>
+    </section>
+
+</div>
+
 </body>
 </html>
